@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#0B0F19] text-gray-100 antialiased font-sans overflow-hidden select-none;
+  }
+}
+
+/* Custom Webkit Scrollbars for a clean desktop frame appearance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F293D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2B3A54;
+}
