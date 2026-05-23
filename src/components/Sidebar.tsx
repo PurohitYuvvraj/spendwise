@@ -1,4 +1,3 @@
-import React from 'react'
 import { LayoutDashboard, Receipt, Landmark, BellRing, Wallet } from 'lucide-react'
 
 interface SidebarProps {
@@ -17,7 +16,6 @@ export default function Sidebar({ activePage, setActivePage }: SidebarProps) {
   return (
     <div className="w-64 h-full bg-[#0B0F19] border-r border-[#1E2640] flex flex-col justify-between p-4 flex-shrink-0 pt-12 z-40">
       <div className="space-y-6">
-        {/* Upper Branding Header badge */}
         <div className="flex items-center gap-3 px-2">
           <div className="p-2 bg-blue-500/10 rounded-xl border border-blue-500/20">
             <Wallet className="w-5 h-5 text-blue-400" />
@@ -28,7 +26,6 @@ export default function Sidebar({ activePage, setActivePage }: SidebarProps) {
           </div>
         </div>
 
-        {/* Dynamic Nav link matrix maps */}
         <nav className="space-y-1">
           {navigation.map((item) => {
             const Icon = item.icon
@@ -52,7 +49,6 @@ export default function Sidebar({ activePage, setActivePage }: SidebarProps) {
         </nav>
       </div>
 
-      {/* Database engine confirmation cluster footprint */}
       <div className="bg-[#111625] border border-[#1E2640] rounded-xl p-3 flex items-center gap-2.5">
         <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
         <div className="min-w-0">

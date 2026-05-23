@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import Transactions from './pages/Transactions'
@@ -6,10 +6,8 @@ import Budgets from './pages/Budgets'
 import Subscriptions from './pages/Subscriptions'
 
 export default function App() {
-  // Track the active page view dynamically
   const [activePage, setActivePage] = useState<string>('Dashboard')
 
-  // Conditional router rendering map
   const renderPage = () => {
     switch (activePage) {
       case 'Dashboard':

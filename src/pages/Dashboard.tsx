@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { ArrowUpRight, ArrowDownRight, Scale, AlertTriangle, ShieldCheck } from 'lucide-react'
 
 export default function Dashboard() {
@@ -50,7 +50,6 @@ export default function Dashboard() {
 
   return (
     <div className="p-8 space-y-8 max-w-6xl w-full mx-auto">
-      {/* Top Banner Greeting */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#1E2640] pb-6">
         <div>
           <h2 className="text-2xl font-bold tracking-tight text-white">Financial Matrix</h2>
@@ -61,9 +60,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Main KPI Status Row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Income Card */}
         <div className="bg-[#131926] p-6 rounded-2xl border border-[#1E2640] flex items-center justify-between hover:border-[#2C3759] transition-all duration-200">
           <div>
             <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Inbound Gross Income</p>
@@ -74,7 +71,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Expenses Card */}
         <div className="bg-[#131926] p-6 rounded-2xl border border-[#1E2640] flex items-center justify-between hover:border-[#2C3759] transition-all duration-200">
           <div>
             <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Outbound Ledger Expenses</p>
@@ -85,7 +81,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Balance Card */}
         <div className="bg-[#131926] p-6 rounded-2xl border border-[#1E2640] flex items-center justify-between hover:border-[#2C3759] transition-all duration-200">
           <div>
             <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Net Position Liquid Liquidity</p>
@@ -99,7 +94,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Info Status Banner */}
       <div className="bg-[#131926]/40 p-5 rounded-2xl border border-[#1E2640] flex items-start gap-4">
         <div className="p-2 bg-blue-500/10 rounded-xl flex-shrink-0 mt-0.5">
           <AlertTriangle className="w-4 h-4 text-blue-400" />
